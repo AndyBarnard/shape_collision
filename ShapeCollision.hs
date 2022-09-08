@@ -5,13 +5,13 @@
 
 module ShapeCollision where
 
-type Vertex = (Double, Double)
-
-type Projection = Vertex
+type Axes = Shape
 
 type Shape = [Vertex]
 
-type Axes = Shape
+type Projection = Vertex
+
+type Vertex = (Double, Double)
 
 -- Take a vector and return one in the same direction but with length 1
 normalize :: Vertex -> Vertex 
